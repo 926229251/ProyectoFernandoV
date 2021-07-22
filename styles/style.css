@@ -1,0 +1,451 @@
+:root {
+  --misterio: #000000;
+  --blanco: #ffffff;
+  --verde-agua: #aadddd;
+  --naranja-claro: #ffc289;
+  --vino: #311530;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Courgette";
+  src: url("../fonts/Courgette-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Jomolhari";
+  src: url("../fonts/Jomolhari-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fv-container {
+  max-width: 1280px;
+}
+
+/* HEADER */
+
+.fv-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--misterio);
+  width: 100%;
+}
+
+.fv-header__logo {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.fv-header__link {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+  font-family: "Inter";
+}
+
+.fv-link__item {
+  text-decoration: none;
+  color: var(--naranja-claro);
+}
+
+/* FOOTER */
+
+.fv-footer {
+  width: 100%;
+  background-color: var(--misterio);
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fv-footer__txt {
+  padding: 25px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size-adjust: 24px;
+  text-align: center;
+  color: var(--blanco);
+}
+
+.fv-footer__icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* PORTADA */
+
+.fv-portada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--naranja-claro);
+  width: 100%;
+}
+
+.fv-portada__titulo {
+  font-size: 64px;
+  font-weight: 400;
+  font-family: "Jomolhari";
+}
+
+.fv-portada__img {
+  max-height: 367px;
+  max-width: 1371px;
+  margin-bottom: 26px;
+}
+
+/* INICIO */
+
+.fv-fernando {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.fv-fernando__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fv-fernando__foto {
+  animation: spin 5s linear infinite reverse;
+}
+@keyframes spin {
+  0% {
+    transform: rotateZ(10deg);
+  }
+  90% {
+    transform: rotateZ(90deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.fv-fernando__info_title {
+  max-width: 325px;
+  font-family: "Courgette";
+  color: var(--vino);
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.fv-fernando__info_txt {
+  max-width: 533px;
+  font-family: "Inter";
+  font-weight: 300;
+  text-align: center;
+}
+
+/*INICIO - MEJORES FOTOGRAFIAS*/
+
+.fv-mejoresfotos {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.fv-mejoresfotos__title {
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.fv-mejoresfotos__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.fv-mejoresfotos__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 370px;
+}
+
+.fv-mejoresfotos__card_img {
+  max-height: 412px;
+  max-width: 370px;
+}
+
+.fv-mejoresfotos__card_info {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--verde-agua);
+  padding-left: 36px;
+  padding-right: 36px;
+  height: 338px;
+}
+
+.fv-mejoresfotos__card_title {
+  font-family: "Courgette";
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.fv-mejoresfotos__card_txt {
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 300;
+}
+
+.fv-pasatiemposfavs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--verde-agua);
+  max-width: 100%;
+  margin-top: 25px;
+  padding: 80px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.fv-pasatiemposfavs__title {
+  font-size: 24px;
+  font-family: "Inter";
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.fv-pasatiemposfavs__imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fv-pasatiemposfavs__txt {
+  background-color: var(--naranja-claro);
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 18px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  width: 100%;
+}
+
+.fv-mejorproyecto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--verde-agua);
+  margin-top: 45px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fv-mejorproyecto__title {
+  width: 100%;
+  text-align: center;
+  font-family: "Inter";
+  margin-top: 40px;
+}
+
+.fv-mejorproyecto__img {
+  height: 475px;
+  width: 500px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.fv-mejorproyecto__txt {
+  font-family: "Inter";
+  font-weight: 600;
+  max-width: 510px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* PASATIEMPOS */
+
+.fv-viajar {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  background-color: var(--verde-agua);
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.fv-viajar__title {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.fv-viajar__imgs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fv-viajar__txt {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.fv-viajar__carousel_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.fv-viajar__carousel {
+  width: 1100px;
+}
+
+.fv-carousel__arrow {
+  height: 40px;
+  width: 40px;
+  display: flex !important;
+}
+
+.fv-carousel__arrow:hover {
+  cursor: pointer;
+}
+
+/* HABILIDADES */
+
+.fv-habilidades__items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fv-habilidades__item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--verde-agua);
+  border-radius: 65px;
+  padding-left: 54px;
+  padding-top: 54px;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.fv-habilidades__item_title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+}
+
+.fv-habilidades_item_info {
+  display: flex;
+  align-items: center;
+}
+
+.fv-habilidades__item__txt {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 80%;
+}
+
+/* PROYECTOS REALIZADOS*/
+
+.fv-proyectosrealizados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.fv-proyectosrealizados__video {
+  width: 970px;
+  height: 455px;
+}
+
+/*  CONTACTO  */
+
+.fv-contacto__title {
+  font-family: "Jomolhari";
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.fv-contacto__formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--verde-agua);
+  align-items: center;
+}
+
+.fv-contacto__formulario_input {
+  margin: 20px;
+  padding-top: 15px;
+  width: 300px;
+}
+
+.fv-contacto__formulario_input::placeholder {
+  color: black;
+}
+
+.fv-contacto__formulario_input:focus {
+  outline: none;
+}
+
+.fv-contacto__formulario_textarea {
+  margin: 20px;
+  width: 300px;
+  padding: 15px;
+}
+
+.fv-contacto__formulario_textarea::placeholder {
+  color: black;
+}
+
+.fv-contacto__formulario_boton {
+  height: 30px;
+  border: none;
+  background-color: var(--vino);
+  color: var(--blanco);
+  width: 250px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.fv-contacto__formulario_boton:hover {
+  cursor: pointer;
+}
